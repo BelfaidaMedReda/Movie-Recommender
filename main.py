@@ -168,7 +168,12 @@ new_df.head()
 
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.stem import PorterStemmer
+
 import nltk
+
+# Download necessary resources if they aren't already downloaded
+nltk.download('stopwords')
+nltk.download('punkt')
 
 class StemmedCountVectorizer(CountVectorizer):
 

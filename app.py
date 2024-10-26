@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
+import os
 import pandas as pd
 import streamlit as st
 from ipynb.fs.full.main import *
 import requests
 
+api_key = os.getenv('TMDB_API_KEY')
+
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=403a18b0032fe0e147157809530a8230&language=en-US"
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
@@ -30,7 +33,7 @@ def main():
         .header-style {
             font-size: 40px;  /* Increase font size */
             font-weight: bold;
-            color: green;     /* Set text color to green */
+            color: black;     /* Set text color to green */
             text-align: center;
         }
 

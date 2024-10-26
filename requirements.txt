@@ -14,3 +14,4 @@ six==1.16.0  # Required by pandas
 tqdm==4.66.5  # Required by nltk
 regex==2024.9.11  # Required by nltk
 click==8.1.7  # Required by nltk
+streamlit == 1.39.0

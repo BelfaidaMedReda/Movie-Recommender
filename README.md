@@ -99,3 +99,5 @@ streamlit run app.py
     - Styled interface with customized headers and buttons
 
 ## Simulation 
+
+Please view the given link: [https://content-based-recommender-system.streamlit.app/](https://content-based-recommender-system.streamlit.app/)

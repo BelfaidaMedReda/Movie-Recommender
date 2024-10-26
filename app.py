@@ -2,10 +2,10 @@
 import os
 import pandas as pd
 import streamlit as st
-from ipynb.fs.full.main import *
+from main import movies,recommend
 import requests
 
-api_key = os.getenv('TMDB_API_KEY')
+
 
 
 def fetch_poster(movie_id):
@@ -25,6 +25,7 @@ def get_image(movie):
 
 
 def main():
+    api_key = os.getenv('TMDB_API_KEY')
     # Custom CSS to style the header and elements
     st.markdown(
         """
